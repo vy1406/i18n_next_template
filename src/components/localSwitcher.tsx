@@ -11,12 +11,11 @@ const LanguageDropdown = ({
   isOpen: boolean;
   onSelect: (path: string) => void;
 }) => (
-  <div className={`dropdown ${isOpen ? "dropdown-open" : ""}`}>
+  <div>
     {isOpen &&
       languageOptions.map((option) => (
         <button
           key={option.path}
-          className="language-button"
           onClick={() => onSelect(option.path)}
         >
           {option.name}
@@ -54,11 +53,8 @@ const LocalSwitcher = () => {
   };
 
   return (
-    <div className="header-languages" ref={dropdownRef}>
-      <button
-        className={`dropdown-toggle ${isDropdownOpen ? "active" : ""}`}
-        onClick={toggleDropdown}
-      >
+    <div ref={dropdownRef}>
+      <button onClick={toggleDropdown}>
         Languages
       </button>
       <LanguageDropdown isOpen={isDropdownOpen} onSelect={handleLanguageChange} />
