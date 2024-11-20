@@ -38,4 +38,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Unimported
 
-Uou can always use npx unimported to check what files / deps are imported 
+Uou can always use npx unimported to check what files / deps are imported git
