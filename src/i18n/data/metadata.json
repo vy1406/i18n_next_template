@@ -1,0 +1,10 @@
+{
+  "en": {
+    "title": "English title metadata",
+    "description": "English description metadata"
+  },
+  "es": {
+    "title": "Título en español metadata",
+    "description": "Descripción en español metadata"
+  }
+}
